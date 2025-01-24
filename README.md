@@ -35,3 +35,4 @@ python app.py
 ```
 ### **5. Agora use o Gerenciador de Tarefas acessando a seguinte URL:**
 [Gerenciador de Tarefas](http://localhost:5000)
+
