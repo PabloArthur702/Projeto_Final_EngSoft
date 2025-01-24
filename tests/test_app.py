@@ -27,5 +27,5 @@ class TestBcrypt(unittest.TestCase):
         hash2 = self.bcrypt.generate_password_hash(password).decode('utf-8')
         self.assertNotEqual(hash1, hash2)
 
-if name == "main":
+if __name__ == "__main__":
     unittest.main()
