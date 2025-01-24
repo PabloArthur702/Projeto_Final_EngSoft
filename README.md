@@ -20,7 +20,7 @@ git clone https://github.com/PabloArthur702/Projeto_Final_EngSoft.git
 ``` 
 ### **2. Entre no diretório do repositório clonado**
 ```bash
-cd API_tasks
+cd .\Projeto_Final_EngSoft\
 ```
 ### **3. Instale as dependencias necessarias**
 ```bash
