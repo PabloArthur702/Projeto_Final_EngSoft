@@ -33,4 +33,5 @@ pip install flask-bcrypt
 ```bash
 python app.py
 ```
-### **5. Acesse usando o seu navegador o URL fornecido no terminal**
+### **5. Agora use o Gerenciador de Tarefas acessando a seguinte URL:**
+[Gerenciador de Tarefas](http://localhost:5000)
