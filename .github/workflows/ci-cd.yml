@@ -23,7 +23,7 @@ jobs:
 
     - name: Instalar dependências
       run: |
-        python -m venv venv
+        virtualenv venv
         source venv/bin/activate
         pip install -r requirements.txt
 
@@ -53,7 +53,7 @@ jobs:
 
     - name: Instalar dependências
       run: |
-        python -m venv venv
+        virtualenv venv
         source venv/bin/activate
         pip install -r requirements.txt
 
