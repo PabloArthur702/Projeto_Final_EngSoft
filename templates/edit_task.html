@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Tarefa</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Tarefas</h1>
+        <nav>
+            <a href="{{ url_for('tasks') }}">Tarefas</a>
+            <a href="{{ url_for('logout') }}">Sair</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Editar Tarefa</h2>
+        <form method="POST" action="{{ url_for('edit_task', id=task['id']) }}">
+            <label for="title">Título</label>
+            <input type="text" id="title" name="title" value="{{ task['title'] }}" required>
+
+            <label for="description">Descrição</label>
+            <textarea id="description" name="description" required>{{ task['description'] }}</textarea>
+
+            <label for="deadline">Prazo</label>
+            <input type="datetime-local" id="deadline" name="deadline" value="{{ task['deadline']|replace(' ', 'T') }}" required>
+
+            <button type="submit">Salvar Alterações</button>
+        </form>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="messages">
+            {% for category, message in messages %}
+                <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        {% endwith %}
+    </main>
+</body>
+</html>
