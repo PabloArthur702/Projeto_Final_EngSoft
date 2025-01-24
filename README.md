@@ -12,11 +12,11 @@ Este é um projeto de gerenciamento de tarefas desenvolvido para máteria DCA360
 
 ---
 
-## **Execute a API usando os seguintes comandos em um terminal compatível:**
+## **Execute usando os seguintes comandos em um terminal compatível:**
 
 ### **1. Clone o repositório**
 ```bash
-git clone https://github.com/YuriFBorges/ProjetoFinal-Eng-Soft.git
+git clone https://github.com/PabloArthur702/Projeto_Final_EngSoft.git
 ``` 
 ### **2. Entre no diretório do repositório clonado**
 ```bash
